@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starbucks - Página de Inicio</title>
+    <link rel="stylesheet" href="stylees.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="file:///C:/Users/52556/Downloads/logo.svg" alt="Starbucks">
+            </div>
+            <ul id="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a Starbucks</h1>
+            <p>Disfruta de una experiencia única en cada taza. ¡Explora nuestras nuevas bebidas!</p>
+            <a href="#productos" class="btn-primary">Explorar el Menú</a>
+        </div>
+        
+    </section>
+
+    <!-- Sección de Productos (Slider) -->
+    <section class="products" id="productos">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="product-slider">
+            <div class="product">
+                <img src="https://okdiario.com/img/2021/10/16/caramel-machiato-655x368.jpg" alt=" Caramel Macchiato">
+                <h3>Café Caramel Macchiato</h3>
+                <p>Un café espresso con leche vaporizada y un toque de caramelo.</p>
+            </div>
+            <div class="product">
+                <img src=https://www.arte-latte.com/storage/2020/12/latte-768x270.jpg alt="Café Latte">
+                <h3>Café Latte</h3>
+                <p>Una combinación perfecta de espresso y leche al vapor.</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.forbes.com.mx/2020/09/te-matcha-latte--e1599501578817-640x360.jpg" alt="Té Verde Matcha">
+                <h3>Té Verde Matcha</h3>
+                <p>Un delicioso té verde matcha, ideal para tu bienestar.</p>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <p>"Me encanta Starbucks, siempre encuentro lo que busco, y la calidad es insuperable. ¡Mis favoritos son los frappuccinos!"</p>
+            <h4>- Mariana R.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Excelente servicio y ambiente relajante. Ideal para una pausa en el día."</p>
+            <h4>- Carlos L.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"El café más delicioso que he probado. ¡Definitivamente lo recomiendo!"</p>
+            <h4>- Ana F.</h4>
+        </div>
+    </section>
+
+    <!-- Sección de suscripción -->
+    <section class="subscribe">
+        <h2 class="section-title">¡Únete a nuestro boletín!</h2>
+        <p>Recibe ofertas exclusivas y noticias de Starbucks directamente en tu correo.</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Ingresa tu email" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p> Starbucks. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

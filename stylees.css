@@ -1,0 +1,256 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #006747;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #006747;
+        padding: 20px 0;
+    }
+
+    header ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url('https://img.freepik.com/foto-gratis/granos-cafe-sobre-fondo-oscuro-vista-superior-concepto-cafe-bandera_1220-6300.jpg?t=st=1731599935~exp=1731603535~hmac=52598295c4a3b8424034b8641fbf7a888bc3f4a2bb20fa3647c486adfa7804c7&w=826');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #006747;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #004c34;
+}
+
+/* Sección de Productos (Slider) */
+.products {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.product {
+    margin: 0 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.product p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Slider Controls */
+.slider-controls {
+    margin-top: 20px;
+}
+
+.slider-controls button {
+    background-color: #006747;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.slider-controls button:hover {
+    background-color: #004c34;
+}
+
+/* Sección de Testimonios */
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Sección de Suscripción */
+.subscribe {
+    background-color: #006747;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.subscribe form {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #006747;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #004c34;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+footer .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-content ul li a:hover {
+    color: #ccc;
+}
